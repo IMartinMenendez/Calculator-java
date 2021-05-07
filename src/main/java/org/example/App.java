@@ -20,6 +20,23 @@ public class App {
         System.out.println("Enter second number");
         int num2 = myObj3.nextInt();
 
+        switch(operator) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "/":
+                result = num1 / num2;
+                break;
+            case "x":
+                result = num1 * num2;
+                break;
+            default:
+                System.out.println("ERROR");
+        }
+
         System.out.println("your result is: " + result);
     }
 }
